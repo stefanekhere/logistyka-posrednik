@@ -1,0 +1,68 @@
+.background{
+    background-image: url(../images/bg.jpg);
+    height: 2000px;
+    font-family: 'Times New Roman', Times, serif;
+    color: lightgrey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+      bottom: -30px;
+    }
+  
+    to {
+      opacity: 1;
+      bottom: 0px;
+    }
+  }
+
+  .fadein1 {
+    position: relative;
+    -webkit-animation: fadein 1s ease-in-out;
+            animation: fadein 1s ease-in-out;
+  }
+  
+  .fadein2 {
+    position: relative;
+    -webkit-animation: fadein 1.2s ease-in-out;
+            animation: fadein 1.2s ease-in-out;
+  }
+  
+  .fadein3 {
+    position: relative;
+    -webkit-animation: fadein 1.4s ease-in-out;
+            animation: fadein 1.4s ease-in-out;
+  }
+
+  .costs{
+    margin-right: 20px;
+    margin-bottom:20px;
+  }
+
+  .loader{
+    width: 150px;
+    height: 150px;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    position: fixed;
+  }
+
+  .displayN{
+    display: none;
+  }
+
+  .menu{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: calc(100% - 300px);
+    padding-top: 20px;
+    background: transparent;
+  }
